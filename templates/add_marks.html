@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+  <h2 class="mb-4">Add Marks</h2>
+
+  <div class="card shadow-sm">
+
+    <div class="card-body">
+
+      <form method="POST">
+
+        {% csrf_token %}
+
+        <!-- Student -->
+        <div class="mb-3">
+          <label class="form-label">Student</label>
+          {{ form.student }}
+          {% if form.student.errors %}
+          <div class="text-danger">
+            {{ form.student.errors }}
+          </div>
+          {% endif %}
+        </div>
+
+        <!-- Subject -->
+        <div class="mb-3">
+          <label class="form-label">Subject</label>
+          {{ form.subject }}
+          {% if form.subject.errors %}
+          <div class="text-danger">
+            {{ form.subject.errors }}
+          </div>
+          {% endif %}
+        </div>
+
+        <!-- Marks -->
+        <div class="mb-3">
+          <label class="form-label">Marks</label>
+          {{ form.marks }}
+          {% if form.marks.errors %}
+          <div class="text-danger">
+            {{ form.marks.errors }}
+          </div>
+          {% endif %}
+        </div>
+
+        <!-- Total Marks -->
+        <div class="mb-3">
+          <label class="form-label">Total Marks</label>
+          {{ form.total_marks }}
+          {% if form.total_marks.errors %}
+          <div class="text-danger">
+            {{ form.total_marks.errors }}
+          </div>
+          {% endif %}
+        </div>
+
+        <button type="submit" class="btn btn-success">
+          Add Marks
+        </button>
+
+        <a href="{% url 'marks_list' %}" class="btn btn-secondary">
+          Cancel
+        </a>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

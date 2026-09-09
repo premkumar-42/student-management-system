@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <h2 class="mb-4">Marks Details</h2>
+
+    <div class="card shadow-sm">
+
+        <div class="card-body">
+
+            <p>
+                <strong>Student:</strong>
+                {{ mark.student.name }}
+            </p>
+
+            <p>
+                <strong>Subject:</strong>
+                {{ mark.subject }}
+            </p>
+
+            <p>
+                <strong>Marks:</strong>
+                {{ mark.marks }}
+            </p>
+
+            <p>
+                <strong>Total Marks:</strong>
+                {{ mark.total_marks }}
+            </p>
+
+            <p>
+                <strong>Percentage:</strong>
+                {% widthratio mark.marks mark.total_marks 100 %}%
+            </p>
+
+            <a href="{% url 'marks_list' %}"
+               class="btn btn-secondary">
+                Back
+            </a>
+
+            <a href="{% url 'edit_marks' mark.id %}"
+               class="btn btn-warning">
+                Edit
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

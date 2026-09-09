@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+  <h2 class="mb-4">Add Teacher</h2>
+
+  <div class="card shadow-sm">
+
+    <div class="card-body">
+
+      <form method="POST">
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit" class="btn btn-success">
+          Add Teacher
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

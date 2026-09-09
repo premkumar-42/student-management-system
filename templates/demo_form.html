@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Django Form Demo</h2>
+
+<form action="" method="POST">
+  {% csrf_token %}
+
+  {{ form }}
+
+  <button type="submit">Submit</button>
+</form>
+
+{% endblock %}

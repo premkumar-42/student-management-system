@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <h2>Teachers List</h2>
+
+    <div class="card shadow-sm mb-4">
+    <div class="card-body">
+
+        <form method="GET">
+
+            <div class="row">
+
+                <!-- Subject -->
+                <div class="col-md-5">
+                    <label class="form-label">Subject</label>
+
+                    <select name="subject" class="form-select">
+                        <option value="">All Subjects</option>
+
+                        <option value="Python"
+                            {% if subject == "Python" %}selected{% endif %}>
+                            Python
+                        </option>
+
+                        <option value="Java"
+                            {% if subject == "Java" %}selected{% endif %}>
+                            Java
+                        </option>
+
+                        <option value="SQL"
+                            {% if subject == "SQL" %}selected{% endif %}>
+                            SQL
+                        </option>
+
+                        <option value="Django"
+                            {% if subject == "Django" %}selected{% endif %}>
+                            Django
+                        </option>
+                    </select>
+                </div>
+
+                <!-- Experience -->
+                <div class="col-md-5">
+                    <label class="form-label">Minimum Experience</label>
+
+                    <select name="min_experience" class="form-select">
+
+                        <option value="">Any Experience</option>
+
+                        <option value="1"
+                            {% if min_experience == "1" %}selected{% endif %}>
+                            1+ Years
+                        </option>
+
+                        <option value="2"
+                            {% if min_experience == "2" %}selected{% endif %}>
+                            2+ Years
+                        </option>
+
+                        <option value="3"
+                            {% if min_experience == "3" %}selected{% endif %}>
+                            3+ Years
+                        </option>
+
+                        <option value="5"
+                            {% if min_experience == "5" %}selected{% endif %}>
+                            5+ Years
+                        </option>
+
+                    </select>
+                </div>
+
+                <!-- Buttons -->
+                <div class="col-md-2 d-flex align-items-end">
+
+                    <button type="submit" class="btn btn-primary me-2">
+                        Filter
+                    </button>
+
+                    <a href="{% url 'teachers_list' %}"
+                       class="btn btn-secondary">
+                        Clear
+                    </a>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Age</th>
+                <th>Experience</th>
+                <th>Edit</th>
+                <th>Delete</th>
+                <th>View</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+          {% for teacher in teachers %}
+
+<tr>
+    <td>{{ teacher.id }}</td>
+
+    <td>{{ teacher.name }}</td>
+
+    <td>{{ teacher.subject }}</td>
+
+    <td>{{ teacher.age }}</td>
+
+    <td>{{ teacher.experience }} Years</td>
+
+    <td>
+        <a href="{% url 'edit_teacher' teacher.id %}"
+           class="btn btn-warning">
+            Edit
+        </a>
+    </td>
+
+    <td>
+        <a href="{% url 'delete_teacher' teacher.id %}"
+           class="btn btn-danger">
+            Delete
+        </a>
+    </td>
+
+    <td>
+       <a href="{% url 'teacher_detail' teacher.id %}"
+         class="btn btn-info">
+          View
+       </a>
+    </td>
+</tr>
+
+{% empty %}
+
+<tr>
+    <td colspan="7">No teachers found.</td>
+</tr>
+
+{% endfor %}
+
+        </tbody>
+
+    </table>
+
+</div>
+
+{% endblock %}

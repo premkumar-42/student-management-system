@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <h2>Teacher Details</h2>
+
+    <div class="card shadow-sm">
+
+        <div class="card-body">
+
+            <p><strong>ID:</strong> {{ teacher.id }}</p>
+
+            <p><strong>Name:</strong> {{ teacher.name }}</p>
+
+            <p><strong>Subject:</strong> {{ teacher.subject }}</p>
+
+            <p><strong>Age:</strong> {{ teacher.age }}</p>
+
+            <p><strong>Experience:</strong> {{ teacher.experience }} Years</p>
+
+            <a href="{% url 'teachers_list' %}" class="btn btn-secondary">
+                Back
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
