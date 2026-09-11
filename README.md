@@ -309,23 +309,22 @@ The production application uses environment variables for sensitive settings suc
 
 Screenshots of the application will be added here to demonstrate the main features and user interface.
 
+
+
 ### 🔐 Login Page
-![Login Page](screenshots/Login.png)
+![Login Page](Login.png)
 
 ### 📊 Dashboard
-![Dashboard](screenshots/Dashboard.png)
+![Dashboard](Dashboard.png)
 
 ### 👨‍🎓 Student Management
-![Student Management](screenshots/Students.png)
+![Student Management](Student.png)
 
-### 📋 Foem
-![Form](screenshots/Form.png)
+### 📝 Form
+![Form](Form.png)
 
-
-### Attendance
-![Attendance](screenshot/Attendance.png)
-
-
+### 📋 Attendance
+![Attendance](Attendance.png)
 
 ## Security
 
