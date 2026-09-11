@@ -6,3 +6,6 @@ staticfiles/
 media/
 data.json
 documents/
+app_data.json
+create_fixture.py
+media.zip
