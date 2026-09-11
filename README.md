@@ -363,6 +363,21 @@ Possible future improvements include:
 * Advanced reporting
 * Improved search and filtering
 
+ ## 📸 Screenshots
+
+### 🔐 Login Page
+![Login Page](screenshots/Login.png)
+
+### 📊 Dashboard
+![Dashboard](screenshots/Dashboard.png)
+
+### 👨‍🎓 Student Management
+![Student Management](screenshots/Students.png)
+
+### 📋 Foem
+![Attendance](screenshots/Form.png)
+
+
 ## Author
 
 **Prem Kumar**
