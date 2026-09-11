@@ -309,29 +309,18 @@ The production application uses environment variables for sensitive settings suc
 
 Screenshots of the application will be added here to demonstrate the main features and user interface.
 
-### Login
+### 🔐 Login Page
+![Login Page](screenshots/Login.png)
 
-*Add login page screenshot here.*
+### 📊 Dashboard
+![Dashboard](screenshots/Dashboard.png)
 
-### Dashboard
+### 👨‍🎓 Student Management
+![Student Management](screenshots/Students.png)
 
-*Add dashboard screenshot here.*
+### 📋 Foem
+![Attendance](screenshots/Form.png)
 
-### Students
-
-*Add students page screenshot here.*
-
-### Teachers
-
-*Add teachers page screenshot here.*
-
-### Courses
-
-*Add courses page screenshot here.*
-
-### Marks
-
-*Add marks page screenshot here.*
 
 ### Attendance
 
@@ -363,19 +352,6 @@ Possible future improvements include:
 * Advanced reporting
 * Improved search and filtering
 
- ## 📸 Screenshots
-
-### 🔐 Login Page
-![Login Page](screenshots/Login.png)
-
-### 📊 Dashboard
-![Dashboard](screenshots/Dashboard.png)
-
-### 👨‍🎓 Student Management
-![Student Management](screenshots/Students.png)
-
-### 📋 Foem
-![Attendance](screenshots/Form.png)
 
 
 ## Author
