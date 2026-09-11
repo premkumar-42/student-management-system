@@ -1,141 +1,133 @@
 <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
 
 
-<div class="container px-3">
+    <div class="container px-3">
 
-    <!-- Brand -->
-    <a class="navbar-brand fw-bold" href="{% url 'home' %}">
-        Student Management
-    </a>
-
-
-    <!-- Mobile button -->
-    <button class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-
-        <span class="navbar-toggler-icon"></span>
-
-    </button>
+        <!-- Brand -->
+        <a class="navbar-brand fw-bold" href="{% url 'home' %}">
+            Student Management
+        </a>
 
 
-    <!-- Navbar items -->
-    <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- Mobile button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
 
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <span class="navbar-toggler-icon"></span>
 
-            <!-- Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'dashboard' %}">
-                    Dashboard
-                </a>
-            </li>
+        </button>
 
 
-            <!-- Students -->
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'students_list' %}">
-                    Students
-                </a>
-            </li>
+        <!-- Navbar items -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!-- Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'dashboard' %}">
+                        Dashboard
+                    </a>
+                </li>
 
 
-            <!-- Academics -->
-            <li class="nav-item dropdown">
-
-                <a class="nav-link dropdown-toggle"
-                   href="#"
-                   role="button"
-                   data-bs-toggle="dropdown"
-                   aria-expanded="false">
-
-                    Academics
-
-                </a>
-
-                <ul class="dropdown-menu">
-
-                    <li>
-                        <a class="dropdown-item" href="{% url 'teachers_list' %}">
-                            Teachers
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="{% url 'course_list' %}">
-                            Courses
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="{% url 'attendance_list' %}">
-                            Attendance
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="{% url 'marks_list' %}">
-                            Marks
-                        </a>
-                    </li>
-
-                </ul>
-
-            </li>
+                <!-- Students -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'students_list' %}">
+                        Students
+                    </a>
+                </li>
 
 
-            <!-- More -->
-            <li class="nav-item dropdown">
+                <!-- Academics -->
+                <li class="nav-item dropdown">
 
-                <a class="nav-link dropdown-toggle"
-                   href="#"
-                   role="button"
-                   data-bs-toggle="dropdown"
-                   aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
 
-                    More
+                        Academics
 
-                </a>
+                    </a>
 
-                <ul class="dropdown-menu">
+                    <ul class="dropdown-menu">
 
-                    <li>
-                        <a class="dropdown-item" href="{% url 'about' %}">
-                            About
-                        </a>
-                    </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'teachers_list' %}">
+                                Teachers
+                            </a>
+                        </li>
 
-                    <li>
-                        <a class="dropdown-item" href="{% url 'contact' %}">
-                            Contact
-                        </a>
-                    </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'course_list' %}">
+                                Courses
+                            </a>
+                        </li>
 
-                </ul>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'attendance_list' %}">
+                                Attendance
+                            </a>
+                        </li>
 
-            </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'marks_list' %}">
+                                Marks
+                            </a>
+                        </li>
 
-        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'upload_document' %}">
+                                Upload Document
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
 
 
-        <!-- ================= RIGHT SIDE ================= -->
+                <!-- More -->
+                <li class="nav-item dropdown">
 
-        <ul class="navbar-nav">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
 
-            {% if user.is_authenticated %}
+                        More
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a class="dropdown-item" href="{% url 'about' %}">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="{% url 'contact' %}">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+
+            <!-- ================= RIGHT SIDE ================= -->
+
+            <ul class="navbar-nav">
+
+                {% if user.is_authenticated %}
 
                 <!-- User -->
                 <li class="nav-item dropdown">
 
-                    <a class="nav-link dropdown-toggle"
-                       href="#"
-                       role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
 
                         {{ user.username }}
 
@@ -163,8 +155,7 @@
                 <!-- Logout -->
                 <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
 
-                    <a class="btn btn-outline-danger"
-                       href="{% url 'logout' %}">
+                    <a class="btn btn-outline-danger" href="{% url 'logout' %}">
 
                         Logout
 
@@ -172,13 +163,13 @@
 
                 </li>
 
-            {% endif %}
+                {% endif %}
 
-        </ul>
+            </ul>
+
+        </div>
 
     </div>
-
-</div>
 
 
 </nav>

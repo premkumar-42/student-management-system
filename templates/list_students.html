@@ -4,11 +4,20 @@
 
 <div class="container">
 
-    <!-- Page Heading -->
-    <div class="row">
-        <div class="col-12">
+    <div class="row align-items-center mb-4">
+
+        <div class="col">
             <h1>Student Management</h1>
         </div>
+
+        {% if perms.home.add_students %}
+        <div class="col-auto">
+            <a href="{% url 'add_students' %}" class="btn btn-success">
+                Add Student
+            </a>
+        </div>
+        {% endif %}
+
     </div>
 
 
@@ -109,22 +118,21 @@
 
 
         </div>
-<nav aria-label="Student pagination">
-    <ul class="pagination justify-content-center">
+        <nav aria-label="Student pagination">
+            <ul class="pagination justify-content-center">
 
-        {% if students.has_previous %}
-            <li class="page-item">
-                <a class="page-link"
-                   href="?page={{ students.previous_page_number }}">
-                    Previous
-                </a>
-            </li>
-        {% endif %}
+                {% if students.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ students.previous_page_number }}">
+                        Previous
+                    </a>
+                </li>
+                {% endif %}
 
 
-        {% for num in students.paginator.page_range %}
+                {% for num in students.paginator.page_range %}
 
-            {% if students.number == num %}
+                {% if students.number == num %}
 
                 <li class="page-item active">
                     <a class="page-link" href="?page={{ num }}">
@@ -132,7 +140,7 @@
                     </a>
                 </li>
 
-            {% else %}
+                {% else %}
 
                 <li class="page-item">
                     <a class="page-link" href="?page={{ num }}">
@@ -140,22 +148,21 @@
                     </a>
                 </li>
 
-            {% endif %}
+                {% endif %}
 
-        {% endfor %}
+                {% endfor %}
 
 
-        {% if students.has_next %}
-            <li class="page-item">
-                <a class="page-link"
-                   href="?page={{ students.next_page_number }}">
-                    Next
-                </a>
-            </li>
-        {% endif %}
+                {% if students.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ students.next_page_number }}">
+                        Next
+                    </a>
+                </li>
+                {% endif %}
 
-    </ul>
-</nav>
+            </ul>
+        </nav>
     </div>
 
 </div>

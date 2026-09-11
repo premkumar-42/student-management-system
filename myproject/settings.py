@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'students',
+     "cloudinary",
+    "cloudinary_storage",
 ]
 
 MIDDLEWARE = [
@@ -149,3 +151,13 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+if not DEBUG:
+    STORAGES = {
+        "default": {
+            "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
+        },
+        "staticfiles": {
+            "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        },
+    }

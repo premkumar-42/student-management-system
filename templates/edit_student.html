@@ -1,11 +1,11 @@
-<h2>Edit Student</h2>
-
 <form method="POST">
-
     {% csrf_token %}
 
-    {{ form.as_p }}
+    <input type="text" name="name" value="{{ students.name }}">
 
-    <button type="submit">Update</button>
+    <input type="number" name="age" value="{{ students.age }}">
 
+    <button type="submit" class="btn btn-primary">
+        Update Student
+    </button>
 </form>

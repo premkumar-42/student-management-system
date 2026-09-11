@@ -1,0 +1,421 @@
+[
+{
+  "model": "home.students",
+  "pk": 3,
+  "fields": {
+    "name": "kane willamson",
+    "age": 33,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 5,
+  "fields": {
+    "name": "dhoni",
+    "age": 45,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 7,
+  "fields": {
+    "name": "prem",
+    "age": 25,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 9,
+  "fields": {
+    "name": "kevin nash",
+    "age": 47,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 10,
+  "fields": {
+    "name": "rahene",
+    "age": 34,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 11,
+  "fields": {
+    "name": "praveen",
+    "age": 12,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 12,
+  "fields": {
+    "name": "praveen",
+    "age": 15,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 13,
+  "fields": {
+    "name": "praveen",
+    "age": 15,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 14,
+  "fields": {
+    "name": "praveen",
+    "age": 15,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 15,
+  "fields": {
+    "name": "vaishu",
+    "age": 45,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 16,
+  "fields": {
+    "name": "deva",
+    "age": 25,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 17,
+  "fields": {
+    "name": "vijay",
+    "age": 32,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 18,
+  "fields": {
+    "name": "vimal",
+    "age": 23,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 19,
+  "fields": {
+    "name": "ravi",
+    "age": 23,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 20,
+  "fields": {
+    "name": "cena",
+    "age": 22,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 21,
+  "fields": {
+    "name": "randy",
+    "age": 33,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 22,
+  "fields": {
+    "name": "seth",
+    "age": 43,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 23,
+  "fields": {
+    "name": "dean",
+    "age": 32,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 24,
+  "fields": {
+    "name": "jason",
+    "age": 30,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 25,
+  "fields": {
+    "name": "jason",
+    "age": 43,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 26,
+  "fields": {
+    "name": "bryan",
+    "age": 32,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 27,
+  "fields": {
+    "name": "daniel",
+    "age": 22,
+    "created_at": "2026-08-24T07:11:11.531Z"
+  }
+},
+{
+  "model": "home.students",
+  "pk": 28,
+  "fields": {
+    "name": "madhav",
+    "age": 22,
+    "created_at": "2026-09-03T06:10:39.521Z"
+  }
+},
+{
+  "model": "home.studentprofile",
+  "pk": 1,
+  "fields": {
+    "student": 7,
+    "phone": "8778857712",
+    "address": "chennai",
+    "profile_image": "profile_images/photobooth_2.png"
+  }
+},
+{
+  "model": "home.studentprofile",
+  "pk": 2,
+  "fields": {
+    "student": 3,
+    "phone": "1234567890",
+    "address": "kanchipuram",
+    "profile_image": ""
+  }
+},
+{
+  "model": "home.teachers",
+  "pk": 2,
+  "fields": {
+    "name": "vignesh",
+    "subject": "web tech",
+    "age": 28,
+    "experience": 1,
+    "created_at": "2026-08-26T06:32:27.119Z"
+  }
+},
+{
+  "model": "home.teachers",
+  "pk": 3,
+  "fields": {
+    "name": "gurav",
+    "subject": "python",
+    "age": 26,
+    "experience": 2,
+    "created_at": "2026-08-31T12:53:40.330Z"
+  }
+},
+{
+  "model": "home.teachers",
+  "pk": 4,
+  "fields": {
+    "name": "priyadharshini",
+    "subject": "chemistry",
+    "age": 29,
+    "experience": 5,
+    "created_at": "2026-09-02T04:39:50.526Z"
+  }
+},
+{
+  "model": "home.teachers",
+  "pk": 5,
+  "fields": {
+    "name": "priyadharshini",
+    "subject": "physics",
+    "age": 30,
+    "experience": 4,
+    "created_at": "2026-09-02T04:41:36.181Z"
+  }
+},
+{
+  "model": "home.courses",
+  "pk": 1,
+  "fields": {
+    "name": "python",
+    "duration": 2,
+    "fee": 25000,
+    "created_at": "2026-08-31T13:18:18.542Z"
+  }
+},
+{
+  "model": "home.courses",
+  "pk": 2,
+  "fields": {
+    "name": "java",
+    "duration": 4,
+    "fee": 26000,
+    "created_at": "2026-08-31T13:18:46.101Z"
+  }
+},
+{
+  "model": "home.courses",
+  "pk": 3,
+  "fields": {
+    "name": "django",
+    "duration": 2,
+    "fee": 10000,
+    "created_at": "2026-08-31T13:19:02.394Z"
+  }
+},
+{
+  "model": "home.courses",
+  "pk": 4,
+  "fields": {
+    "name": "HTML",
+    "duration": 2,
+    "fee": 15000,
+    "created_at": "2026-08-31T13:19:32.049Z"
+  }
+},
+{
+  "model": "home.courses",
+  "pk": 5,
+  "fields": {
+    "name": "postgresql",
+    "duration": 5,
+    "fee": 44500,
+    "created_at": "2026-09-07T13:59:04.596Z"
+  }
+},
+{
+  "model": "home.attendance",
+  "pk": 1,
+  "fields": {
+    "student": 3,
+    "date": "2026-10-01",
+    "status": true
+  }
+},
+{
+  "model": "home.attendance",
+  "pk": 2,
+  "fields": {
+    "student": 7,
+    "date": "2026-10-01",
+    "status": true
+  }
+},
+{
+  "model": "home.attendance",
+  "pk": 3,
+  "fields": {
+    "student": 10,
+    "date": "2026-10-01",
+    "status": false
+  }
+},
+{
+  "model": "home.marks",
+  "pk": 1,
+  "fields": {
+    "student": 7,
+    "subject": "python",
+    "marks": 64,
+    "total_marks": 100,
+    "created_at": "2026-09-01T14:26:16.138Z"
+  }
+},
+{
+  "model": "home.marks",
+  "pk": 2,
+  "fields": {
+    "student": 10,
+    "subject": "java",
+    "marks": 78,
+    "total_marks": 100,
+    "created_at": "2026-09-01T14:27:02.948Z"
+  }
+},
+{
+  "model": "home.marks",
+  "pk": 3,
+  "fields": {
+    "student": 15,
+    "subject": "sql",
+    "marks": 89,
+    "total_marks": 100,
+    "created_at": "2026-09-01T14:28:51.129Z"
+  }
+},
+{
+  "model": "home.marks",
+  "pk": 4,
+  "fields": {
+    "student": 7,
+    "subject": "sql",
+    "marks": 78,
+    "total_marks": 100,
+    "created_at": "2026-09-01T14:34:04.474Z"
+  }
+},
+{
+  "model": "home.marks",
+  "pk": 5,
+  "fields": {
+    "student": 9,
+    "subject": "sql",
+    "marks": 89,
+    "total_marks": 100,
+    "created_at": "2026-09-01T14:35:22.991Z"
+  }
+},
+{
+  "model": "home.studentdocument",
+  "pk": 1,
+  "fields": {
+    "student": 7,
+    "document": "documents/prem_kumar_1.pdf"
+  }
+},
+{
+  "model": "home.studentdocument",
+  "pk": 2,
+  "fields": {
+    "student": 3,
+    "document": "documents/Education_Experience_Details.xlsx"
+  }
+}
+]
