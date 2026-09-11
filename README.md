@@ -319,12 +319,13 @@ Screenshots of the application will be added here to demonstrate the main featur
 ![Student Management](screenshots/Students.png)
 
 ### 📋 Foem
-![Attendance](screenshots/Form.png)
+![Form](screenshots/Form.png)
 
 
 ### Attendance
+![Attendance](screenshot/Attendance.png)
 
-*Add attendance page screenshot here.*
+
 
 ## Security
 
